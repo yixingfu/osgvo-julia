@@ -8,7 +8,7 @@ RUN cd /opt && \
     
 # access to git
 RUN git config --global url."https://${GIT_TOKEN}:@github.com/".insteadOf "https://github.com/"
-RUN echo git config -l
+RUN git config -l
     
 # install base packages
 COPY install.jl /opt
