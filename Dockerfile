@@ -6,6 +6,10 @@ RUN cd /opt && \
     tar -xzvf julia-1.4.1-linux-x86_64.tar.gz && \
     rm -f julia-1.4.1-linux-x86_64.tar.gz
     
+# access to git
+RUN git config --global url."https://aae1632b597c3df1714cc60eff0ff5d4a8dd0a18:@github.com/".insteadOf “https://github.com/"
+
+    
 # install base packages
 COPY install.jl /opt
 RUN /opt/julia-1.4.1/bin/julia /opt/install.jl && \
