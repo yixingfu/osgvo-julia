@@ -10,5 +10,5 @@ RUN cd /opt && \
 COPY install.jl /opt
 RUN /opt/julia-1.4.1/bin/julia /opt/install.jl && \
     rm -f /opt/install.jl && \
-    find /opt/julia-1.4.1/share/julia/compiled/ -perm 600 -exec chmod 777 {} \;
+    find /opt/julia-1.4.1/share/julia/ -perm 600 -exec chmod 777 {} \;
 
