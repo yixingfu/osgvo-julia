@@ -7,7 +7,7 @@ RUN cd /opt && \
     rm -f julia-1.4.1-linux-x86_64.tar.gz
     
 # access to git
-RUN git config --global url."https://${GIT_TOKEN}:@github.com/".insteadOf “https://github.com/"
+RUN git config --global url."https://${GIT_TOKEN}:@github.com/".insteadOf "https://github.com/"
 
     
 # install base packages
