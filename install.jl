@@ -9,13 +9,10 @@ using Pkg
 
 pkgs = [
         "FFTW", 
-        "MPI", 
         "LinearMaps", 
         "KrylovKit", 
         "Arpack", 
         "HDF5", 
-        "CuArrays", 
-        "PyPlot", 
         "FileIO", 
         "JLD2", 
         "UnicodePlots"
