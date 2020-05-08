@@ -1,4 +1,5 @@
-ARG GIT_TOKEN=$GIT_TOKEN
+ARG GIT_TOKEN
+RUN echo $GIT_TOKEN
 FROM opensciencegrid/osgvo-ubuntu-xenial
 
 # install julia and packages 
