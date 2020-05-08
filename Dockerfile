@@ -1,5 +1,3 @@
-ARG GIT_TOKEN
-RUN echo $GIT_TOKEN
 FROM opensciencegrid/osgvo-ubuntu-xenial
 
 # install julia and packages 
@@ -11,6 +9,9 @@ RUN cd /opt && \
     
 # install base packages
 COPY install.jl /opt
+ARG GIT_TOKEN
+RUN echo $GIT_TOKEN
+
 RUN git config --global url."https://${GIT_TOKEN}:@github.com/".insteadOf "https://github.com/" && \
     git config --global -l && \
     /opt/julia-1.4.1/bin/julia /opt/install.jl && \
