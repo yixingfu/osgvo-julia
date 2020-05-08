@@ -16,5 +16,5 @@ RUN git config --global url."https://${GIT_TOKEN}:@github.com/".insteadOf "https
     git config --global -l && \
     /opt/julia-1.4.1/bin/julia /opt/install.jl && \
     rm -f /opt/install.jl && \
-    chmod -R 777 /opt/julia-1.4.1/share/julia/ \;
+    chmod -R 777 /opt/julia-1.4.1/share/julia/ 
 
