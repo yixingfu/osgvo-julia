@@ -18,3 +18,6 @@ RUN git config --global url."https://${GIT_TOKEN}:@github.com/".insteadOf "https
     rm -f /opt/install.jl && \
     chmod -R 777 /opt/julia-1.4.1/share/julia/ 
 
+
+RUN cd /opt && \
+    wget https://stash.osgconnect.net/public/yxfu/TI3D.jld2
