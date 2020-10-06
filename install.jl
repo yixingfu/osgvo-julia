@@ -15,7 +15,8 @@ pkgs = [
         "HDF5", 
         "FileIO", 
         "JLD2", 
-        "UnicodePlots"
+        "UnicodePlots",
+        "CUDA"
         ]
 for pkg in pkgs
     Pkg.add(pkg)
