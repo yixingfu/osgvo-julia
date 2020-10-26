@@ -1,5 +1,4 @@
 FROM opensciencegrid/osgvo-ubuntu-xenial
-FROM rclone/rclone
 
 # install julia and packages 
 RUN cd /opt && \
@@ -19,5 +18,5 @@ RUN git config --global url."https://${GIT_TOKEN}:@github.com/".insteadOf "https
     chmod -R 777 /opt/julia-1.5.2/share/julia/ 
 
 
-RUN cd /opt && \
-    wget https://stash.osgconnect.net/public/yxfu/TI3D.jld2
+RUN curl https://rclone.org/install.sh | sudo bash
+
