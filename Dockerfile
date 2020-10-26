@@ -18,5 +18,5 @@ RUN git config --global url."https://${GIT_TOKEN}:@github.com/".insteadOf "https
     chmod -R 777 /opt/julia-1.5.2/share/julia/ 
 
 
-RUN curl https://rclone.org/install.sh | sudo bash
+RUN curl https://rclone.org/install.sh | bash
 
